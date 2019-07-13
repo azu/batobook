@@ -1,0 +1,59 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "description": "BatoBook is book engine for web.",
+  "keywords": [
+    "book",
+    "ebook",
+    "web"
+  ],
+  "homepage": "https://github.com/azu/batobook",
+  "bugs": {
+    "url": "https://github.com/azu/batobook/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/batobook.git"
+  },
+  "license": "MIT",
+  "author": "azu",
+  "files": [
+    "bin/",
+    "lib/",
+    "src/"
+  ],
+  "main": "lib/batobook.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\""
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "husky": "^3.0.0",
+    "lerna": "^3.15.0",
+    "lint-staged": "^9.2.0",
+    "prettier": "^1.18.2"
+  },
+  "prettier": {
+    "singleQuote": false,
+    "printWidth": 120,
+    "tabWidth": 4
+  },
+  "husky": {
+    "hooks": {
+      "precommit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
