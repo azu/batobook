@@ -1,0 +1,38 @@
+{
+  "name": "@batobook/layout",
+  "version": "0.0.0",
+  "description": "Layout",
+  "keywords": [
+    "batobook"
+  ],
+  "author": "azu <azuciao@gmail.com>",
+  "homepage": "https://github.com/azu/batobook/tree/master/packages/layout#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.23",
+    "next": "^9.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "typescript": "^3.5.3",
+    "styled-components": "^4.3.2"
+  },
+  "dependencies": {
+    "react-amphtml": "^4.0.0"
+  }
+}
